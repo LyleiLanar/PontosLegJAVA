@@ -1,0 +1,7 @@
+1. Számoljuk ki mennyi a byte, a short és az int típuson tárolható számok összege és írjuk is ki a terminálra.
+
+2. Számoljuk ki, hogy mennyivel több a double típuson tárolható legnagyobb szám a flóténál.
+
+3. Írjuk ki kettes számrendszerben egy tetszőleges integer értéket. Írjuk meg ezt változóval is. Ez combos lesz.
+
+	Segítség: az Integer.toBinary(egész_szam_paraméter) kell ide.

@@ -1,0 +1,38 @@
+				HF 3
+
+  Van a neten egy C# feladatgyűjtemény:
+http://aries.ektf.hu/~hz/pdf-tamop/pdf-02/download/csharp-gyak.pdf
+
+  A feladatokat JAVA-ban készítsétek el természetesen.
+  A neten nyugodtan keressetek segítséget a feladatokkal kapcsolatban, ne akarjátok magatoktól fejből kitalálni a matematikai problémák megoldását. 3.16-ban például ne kezdjetek el sokszögeket és köröket rajzolgatni, hogy hogyan kell kiszámolni egy sokszögbe írható kör sugarát. Erre már perverz matematikusok kitalálták a formulát, nekünk csak ki kell találni, hogyan írjuk meg JAVAul, viszont informatikusként boldogulni kell a googleben való kereséssel!
+  A felhasznált oldalak URLjét az adott program elejére commentben tegyétek majd oda, ha együtt nézzük, akkor össze tudjuk hasonlítani, hogy ki mit talált, ha netalán eltérő eredmények jönnének ki.
+
+  Azt kérném, hogy kezdjetek egy teljesen új Projektet IntelliJ-ben, és ott minden feladathoz készítsetek egy Java fájlt, amiknek a neve valami ilyesmi legyen "Task3_5", "Task3_6" stb.
+
+  Próbáljátok a feladatokat úgy elkészíteni, hogy minnél kevesebb kopi pészttel, valamint első körben próbáljátok ti kitalálni mit kell írni és ha nem megy, akkor puskázzatok az előző feladatokból.
+ 
+  A következő feladatokat csináljátok meg:
+
+	- 3.5
+	- 3.6
+	- 3.7
+	- 3.8
+	- 3.9
+	- 3.10
+	- 3.12
+	- 3.13
+	- 3.14
+	- 3.15
+	- 3.16
+	- 3.17
+	- 3.18
+
+  3.11-es feladatot még ne csináljátok meg, mert még nem tanultuk, viszont ha Zsófi és/vagy Magdi érzi magában az erőt, akkor megpróbálhatja. Nekik már mutattam a Random osztályt és a hozzá tartozó metódust, amivel lehet véletlenszámot előállítani. Nekik egyébként is ismerős lehet ez a néhány feladat, de az ismétlés a tudás félnászasszonya, próbáljátok újra megcsinálni őket segítség nélkül.
+
+  Jó munkát és egészséget!
+    
+
+  
+
+
+

@@ -1,0 +1,28 @@
+1. Írjunk egy programot, ami megmondja, hogy egy szám:
+	- Osztható 3-mal?
+	- Osztható 4-gyel?
+	- Osztható 9-cel?
+	- Osztható 3-mal, 4-gyel és 9-cel is?
+	- Páros-e?
+	- Negatív-e?
+
+
+2. Adjun meg egy értéket, ami egy hőmérsékletet fog jelenteni.
+   Adjunk megy egy karaktert, ha a karakter 'C', akkor az azt jelenti, hogy hőmérséklet Celsiusban van megadva, ha 'F', akkor Fahrenheitben.
+
+	a,
+		Ha a karakter C, akkor írjuk ki, hogy mennyi átváltva az adott érték Fahrenheitbe.
+		Használjuk a következő formátumot: x C° => y F°
+
+		Ha a karakter F, akkor írjuk ki, hogy mennyi átváltva az adott érték Celsius fokba.
+		Használjuk a következő formátumot: x F° => y C°
+
+		A konvertáláshoz szükséges képletet keressétek meg a neten. :D
+	
+	b, 
+		A kiírásnál használt formátumban cseréljük le a "=>"-at egy tetszőleges unikód nyíl karakterre. pl: '➤';
+		Ezt a karaktert tároljuk el egy változóban és ezt fűzzük mindig a megfelelő helyre.
+
+	c, 
+		Abban az esetben, ha abszolút nulla foknál alacsonyabb érték jönne ki, akkor ne konvertáljunk, 
+		hanem írjuk ki, hogy nem megfelelő a megadott érték.

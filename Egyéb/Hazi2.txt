@@ -1,0 +1,138 @@
+public class zHázi02 {
+    public static void main(String[] args) {
+        System.out.println(" ");
+        char karakter12 = '\u270C';
+        //System.out.println("Hello Vili, üdvözöl a  Mátrix!");
+        String space = " ";
+      /*
+        1. Írjunk egy programot, ami megmondja, hogy egy szám:
+	- Osztható 3-mal?
+	- Osztható 4-gyel?
+	- Osztható 9-cel?
+	- Osztható 3-mal, 4-gyel és 9-cel is?
+	- Páros-e?
+	- Negatív-e?
+
+       */
+
+        System.out.println(" ");
+        System.out.println("1.feladat megoldása");
+        System.out.println("");
+        //System.out.println("        "+karakter12);
+        int szam = 36;
+        System.out.println("Vizsgáljuk meg a"+space+szam+space+"számot.");
+        if (szam%3==0){
+            System.out.println("A"+space+szam+space+"osztható 3-al,");
+        }
+        if (szam%3!=0){
+            System.out.println("A"+space+szam+space+"nem osztható 3-al,");
+        }
+        if (szam%4==0){
+            System.out.println("a"+space+szam+space+"osztható 4-el,");
+        }
+        if (szam%4!=0){
+            System.out.println("a"+space+szam+space+"nem osztható 4-el,");
+        }
+        if (szam%9==0){
+            System.out.println("a"+space+szam+space+"osztható 9-el,");
+        }
+        if (szam%9!=0){
+            System.out.println("a"+space+szam+space+"nem osztható 9-el,");
+        }
+        if ((szam%3==0)&&(szam%4==0)&&(szam%9==0)){
+            System.out.println("a"+space+szam+space+"osztható 3-al,4-el,9-el is,");
+        }
+        if ((szam%3!=0)||(szam%4!=0)||(szam%9!=0)){
+            System.out.println("a"+space+szam+space+"nem osztható 3-al,4-el,9-el is,");
+        }
+        if (szam%2==0){
+            System.out.println("a"+space+szam+space+"páros szám,");
+        }
+        if (szam%2!=0){
+            System.out.println("a"+space+szam+space+"páratlan szám,");
+        }
+        if (szam<0){
+            System.out.println("valamint a"+space+szam+space+"negatív szám.");
+        }
+        if (szam>0){
+            System.out.println("valamint a"+space+szam+space+"pozitív szám.");
+        }
+            /*if (magassag >= 175 && isAGirl2==true){
+                System.out.println("Ő magas lány");   */
+        char karakter11 = '\u263C';
+
+        //System.out.println("             "+karakter12+"             "+karakter12);
+        /*
+        2. Adjunk meg egy értéket, ami egy hőmérsékletet fog jelenteni.
+       Adjunk megy egy karaktert, ha a karakter 'C', akkor az azt jelenti, hogy hőmérséklet Celsiusban van megadva,
+          ha 'F', akkor Fahrenheitben.
+
+	a,
+		Ha a karakter C, akkor írjuk ki, hogy mennyi átváltva az adott érték Fahrenheitbe.
+		Használjuk a következő formátumot: x C° => y F°
+
+		Ha a karakter F, akkor írjuk ki, hogy mennyi átváltva az adott érték Celsius fokba.
+		Használjuk a következő formátumot: x F° => y C°
+
+		A konvertáláshoz szükséges képletet keressétek meg a neten. :D
+
+	b,
+		A kiírásnál használt formátumban cseréljük le a "=>"-at egy tetszőleges unikód nyíl karakterre. pl: '➤';
+		Ezt a karaktert tároljuk el egy változóban és ezt fűzzük mindig a megfelelő helyre.
+
+	c,
+		Abban az esetben, ha abszolút nulla foknál alacsonyabb érték jönne ki, akkor ne konvertáljunk,
+		hanem írjuk ki, hogy nem megfelelő a megadott érték.
+         */
+        System.out.println(" ");
+        System.out.println("2.feladat megoldása a:");
+        System.out.println(" ");
+        //System.out.println("        "+karakter12);
+        int homersekletertek = -273;
+        char homerseklettipus = 'C';
+        //[°F] = (([°C]+273,15)×9/5)-459,67
+        //[°C] = (([°F]+459,67)×5/9)-273,15
+        if (homerseklettipus=='F'&& homersekletertek>=-459.67){
+            double homersekletertek3 = ((homersekletertek+459.67)*5/9)-273.15;
+            System.out.println("A"+space+homersekletertek+space+"Fahrenheit"+space+"=>"+space+homersekletertek3+space+"fok Celsiusban.");
+        }
+        if (homerseklettipus=='C'&& homersekletertek>=-273.15){
+            double homersekletertek2 = ((homersekletertek+273.15)*9/5)-459.67;
+            System.out.println("A"+space+homersekletertek+space+"Celsius"+space+"=>"+space+homersekletertek2+space+"fok Fahrenheitben.");
+        }
+        if ((homersekletertek<-273.15 && homerseklettipus=='C')||(homersekletertek<-459.67 && homerseklettipus=='F')){
+            System.out.println("A megadott érték nem megfelelő!");
+        }
+
+        System.out.println("");
+        System.out.println("2.feladat megoldása b:");
+        //System.out.println("       "+karakter12);
+        char karakter14 = '\u27BA';
+        if (homerseklettipus=='F' && homersekletertek>=-459.67){
+            double homersekletertek3 = ((homersekletertek+459.67)*5/9)-273.15;
+            System.out.println("A"+space+homersekletertek+space+"Fahrenheit"+space+karakter14+space+homersekletertek3+space+"fok Celsiusban.");
+        }
+        if (homerseklettipus=='C'&& homersekletertek>=-273.15){
+            double homersekletertek2 = ((homersekletertek+273.15)*9/5)-459.67;
+            System.out.println("A"+space+homersekletertek+space+"Celsius"+space+karakter14+space+homersekletertek2+space+"fok Fahrenheitben.");
+        }
+        if ((homersekletertek<-273.15 && homerseklettipus=='C')||(homersekletertek<-459.67 && homerseklettipus=='F')){
+            System.out.println("A megadott érték nem megfelelő!");
+        }
+
+        System.out.println("");
+        System.out.println("2.feladat megoldása c:");
+        //System.out.println("        "+karakter12);
+        //a Celsius-skálán a −273,15° az abszolút nulla
+        //a Fahreinheit-skálán a −459,67 az abszolút nulla
+        // A megadott érték nem megfelelő!
+
+        if ((homersekletertek<-273.15 && homerseklettipus=='C')||(homersekletertek<-459.67 && homerseklettipus=='F')){
+            System.out.println("A megadott érték nem megfelelő!");
+        }
+        if ((homersekletertek>=-273.15 && homerseklettipus=='C')||(homersekletertek>=-459.67 && homerseklettipus=='F')){
+            System.out.println("Minden rendben, a megadott érték megfelelő!");
+        }
+        System.out.println("        "+karakter12);
+    }
+}
