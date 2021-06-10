@@ -6,6 +6,24 @@ public class Osszegzes {
 
         /*
 
+         ÖSSZEGZÉS TÉTELE
+         -----------------------------------
+            algoritmus Összegzés
+                Összeg := 0
+                ciklus I := 0..(N-1) ismétel
+                    Összeg := Összeg + A[I]
+                cvége
+         -----------------------------------
+
+         ÖSSZEGZÉS TÉTELE II.
+         -----------------------------------
+            algoritmus Összegzés
+                Összeg := A[0]
+                ciklus I := 1..(N-1) ismétel
+                    Összeg := Összeg + A[I]
+                cvége
+         -----------------------------------
+
            egesz összeg = 0 huf
 
            egesz tetel_1 = 400 huf
