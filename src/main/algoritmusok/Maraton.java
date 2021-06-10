@@ -176,7 +176,7 @@ public class Maraton {
 
         db = -1;
         for (int i = 0; i < resztvevok; i++) {
-            //      hUn ->     HUN          TRUE
+            //      hUn ->     HUN     ->     TRUE
             if (orszagok[i].toUpperCase().equals("HUN")) {
                 db++;
                 hunNevek[db] = nevek[i].toUpperCase();
@@ -192,7 +192,7 @@ public class Maraton {
         System.out.println();
 
         /*
-            A fraRajszamok tömb minden eleme 0.
+            A fraRajtszamok tömb minden eleme 0.
          */
 
         for (int i = 0; i < resztvevok; i++) {
@@ -286,6 +286,11 @@ public class Maraton {
                 avége
                 Hely := I
                 Van := (I<N)
+
+                ha (I<N) akkor
+                    Hely := I
+                különben
+                    Hely := -1
          -----------------------------------
          */
 
@@ -304,6 +309,69 @@ public class Maraton {
         } else {
             hely = -1;
             System.out.println("Nem jött el Nurmo Paavi.");
+        }
+        System.out.println();
+
+        // 9. Ki a győztes, mi a rajtszáma, neve és országa? - MINIMUMKIVÁLASZTÁS TÉTEL
+        /*
+
+         MINIMUMKIVÁLASZTÁS TÉTELE
+         -----------------------------------
+            algoritmus MinimumKiválszatás
+                MinI := 0
+                ciklus I := 2..N ismétel
+                    ha A[I]<A[MinI] akkor
+                        MinI := I
+                    hvége
+                cvége
+         -----------------------------------
+         */
+
+        int minI = 0;
+        for (int i = 0; i < resztvevok; i++) {
+            if (eredmenyek[i] < eredmenyek[minI]) {
+                minI = i;
+
+            }
+        }
+
+        System.out.println("Az első helyezett neve " + nevek[minI] + ", országa: " + orszagok[minI] + ", rajtszáma: " + minI + ". ");
+
+        // 10. Helyezési lista? - MINIMUMKIVÁLASZTÁSOS RENDEZÉS
+        /*
+
+            Példa sorozatot:
+
+            0. lépés: 65, 4, 33, 22, 8, 75, 77, 2 //kicseréljük a MinI-edik elemet a nulladikkal.
+            1. lépés: 2, 4, 33, 22, 8, 75, 77, 65 //nem történik semmi.
+            2. lépés: 2, 4, 8, 33, 22, 75, 77, 65 // kicseréljük a MinI-edik elemet a másodikkal.
+            .
+            .
+            n-1. lépés: 2, 4, 8, 22, 33, 65, 75, 77 //
+
+
+         MINIMUMKIVÁLASZTÁSOS RENDEZÉS
+         -----------------------------------
+            algoritmus MinimumKiválszatásosRendezés
+                ciklus J:=1..N-1 ismétlés
+                    MinIndex := J
+                    ciklus I:=J+1..N ismétel
+                        ha A[I]<A[MinIndex] akkor
+                            MinIndex = I
+                        hvége
+                    cvége
+                    Csere:=A[MinIndex]
+                    A[MinIndex]:=A[J]
+                    A[J]:=Csere
+                cvége
+         -----------------------------------
+         */
+
+
+        int[] szamok = {65, 4, 33, 22, 8, 75, 77, 2};
+
+        for (int i = 0; i < szamok.length; i++) {
+            System.out.print(szamok[i] + " ");
         }
 
     }
