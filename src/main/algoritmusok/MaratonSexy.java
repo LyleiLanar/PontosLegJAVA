@@ -211,9 +211,7 @@ public class MaratonSexy {
         int[] rajtszamok = new int[MaratonSexy.eredmenyek.length];
         int[] eredmenyek = new int[MaratonSexy.eredmenyek.length];
 
-        for (int i = 0; i < eredmenyek.length; i++) {
-            eredmenyek[i] = MaratonSexy.eredmenyek[i];
-        }
+        System.arraycopy(MaratonSexy.eredmenyek, 0, eredmenyek, 0, eredmenyek.length);
 
         for (int i = 0; i < eredmenyek.length; i++) {
             rajtszamok[i] = i;
@@ -283,7 +281,7 @@ public class MaratonSexy {
 
         int index = 0;
 
-        while ((index < nevek.length) && (eredmenyek[index] <= 330)) {
+        while ((index < nevek.length) && (eredmenyek[index] <= szintido)) {
             index++;
         }
 
@@ -309,8 +307,8 @@ public class MaratonSexy {
     private static int kapSzeniorokSzama() {
 
         int seniorSzam = 0;
-        for (int i = 0; i < eletkorok.length; i++) {
-            if (eletkorok[i] > 35) {
+        for (int j : eletkorok) {
+            if (j > 35) {
                 seniorSzam++;
             }
         }
