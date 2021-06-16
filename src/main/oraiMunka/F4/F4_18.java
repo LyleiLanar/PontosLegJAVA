@@ -1,4 +1,4 @@
-package main.oraiMunka;
+package main.oraiMunka.F4;
 
 import javax.sound.midi.Soundbank;
 import java.util.Scanner;
