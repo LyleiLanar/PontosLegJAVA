@@ -1,4 +1,4 @@
-package main.oraiMunka;
+package main.oraiMunka.F4;
 
 public class F4_14 {
     public static void main(String[] args) {
