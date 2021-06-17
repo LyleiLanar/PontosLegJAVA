@@ -1,0 +1,30 @@
+    Generáljunk random értéket a titoknak, ez 0000 -> 9999
+
+    A felhaszánáló ezután elkezd tippelgetni. Összesen 10 tippje van.
+    Abban az esetben, ha egy szám jó értékű és jó helyen van, akkor az egy bika.
+    Ha jó értékű, de rossz helyen van, az egy tehén.
+    Ha sehol semmi, akkor nem ír ki semmit.
+
+    Ha a 10 tipp elfogy, a játékos veszített, ha sikerül megfejtenie, akkor nyert.
+
+    első körben a bikákat kell megnézni, ha találtunk, akkor a titok és tipp segédtömbjében az aktuális indexedik értéket truera váltjuk
+    másodjára a teheneket kerssük meg. Végig kell menni újra a tipp tömbön, de csak azokon az értékeken, ahol false szerepel a segédtömbben.
+        Ha találunk egyező értéket, akkor az egy tehén, és a két segédtömbben a megfelelő indexeket truera állítjuk.
+
+    fftt
+    1122 titok
+    3224 tipp   BIKA, TEHÉN.
+    fttf
+
+    ttft
+    5525 titok
+    1555 tipp BIKA, BIKA, TEHÉN
+    fttt
+
+
+    1. tipp
+
+    Ha nem nyert a játékos.
+    frissíteni kell a tipp, titokMarhaság, tippMarhaság tömböt.
+
+    különbne nyert és vége a játéknak.
