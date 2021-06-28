@@ -2,6 +2,8 @@ package main.sorsolator;
 
 public class Sorsolator {
 
+    //Zsófi, Vili, Magdi
+
     /**
      * Konstansok:
      * Tanár és diákok listája.
@@ -9,7 +11,7 @@ public class Sorsolator {
 
     static public final String TEACHER = "Patrik";
 
-    static public final String[] PUPILS = {"Juli", "Magdi", "Zsófi", "Vili"};
+    static public final String[] PUPILS = {"Juli", "Magdi", "Zsófi", "Vili", "Penya"};
 
     /**
      * Pool:
@@ -111,9 +113,9 @@ public class Sorsolator {
      */
     public static void shufflePool() {
 
-        String[] names = getRandomNames(pool.length);
+        //String[] names = getRandomNames(pool.length);
 
-        //String[] names = new String[pool.length];
+        String[] names = new String[pool.length];
 
         for (int i = 0; i < pool.length; i++) {
             names[i] = "";

@@ -4,11 +4,14 @@ import java.util.Scanner;
 
 public class BikaTehen {
 
-    static final int maxElet = 20;
+    static final int maxElet = 10;
+    static final char uresSziv = '\u2661';
+    static final char teliSziv = '\u2665';
 
     static String titok;
     static String tipp;
     static int elet;
+
 
     public static void main(String[] args) {
 
@@ -21,13 +24,17 @@ public class BikaTehen {
         beallitTitok();
         elet = maxElet;
         boolean marhasag;
-        System.out.println(titok);
+        //System.out.println(titok);
+        System.out.println("Gondoltam egy négyjegyű számra (0000-9999) számra! Tippelj!\n" +
+                "Ha az adott értéket eltaláltad, akkor bikát mondok, ha van olyan érték csak más helyen, akkor tehenet!\n");
         do {
+
+            System.out.print("Életeid: ");
             for (int i = 0; i < elet; i++) {
-                System.out.print("♥");
+                System.out.print(teliSziv);
             }
             for (int i = elet; i < maxElet; i++) {
-                System.out.print("♡");
+                System.out.print(uresSziv);
             }
             System.out.println();
             elet--;
@@ -35,10 +42,9 @@ public class BikaTehen {
             marhasag = marhasag();
         } while (!marhasag && elet > 0);
 
-        if (marhasag){
-            System.out.println("GRATULÁLOK GYŐZTÉL!!!");
-        }
-        else {
+        if (marhasag) {
+            System.out.println("GRATULÁLOK GYŐZTÉL!!! Te vagy a helyi cowboy, minden bika réme!");
+        } else {
             System.out.println("Hát jó nagy marha vagy! Vesztettél!");
         }
 
@@ -66,7 +72,7 @@ public class BikaTehen {
 
         do {
 
-            System.out.print("Kérem adjon meg egy tippet: ");
+            System.out.print("Tippelj!: ");
             szam = sc.nextLine();
 
             if (szam.length() == 4) {
