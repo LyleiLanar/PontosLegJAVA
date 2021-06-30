@@ -1,0 +1,41 @@
+Memória Bit (Bájt = 8bit)
+
+Változó: egy rekesz a memóriában, ami valamennyi bájt méretű, ebben valamilyen adatot tárolunk.
+    Van típusa: meghatározza a változó méretét, valamint a rajta elvégezhető műveleteket.
+    Van neve: hogyan tudunk hivatkozni az adott memóriaterületre.
+
+    int a = 10;
+    int b = 12;
+
+    int c = a + b;
+
+----------------------------------
+
+ Vezérlési szerk.
+
+    - Szekvencia (Sorról sorra fut le a program)
+    - Szelekció (Valamilyen feltétel, ami alapján két ágra oszlik a kód.)
+    - Iteráció (Valamilyen feltétel, aminek a teljesülésekor ismételten végrehajtodik egy bizonyos kódszakasz.)
+
+----------------------------------
+
+ int[] szamok = new int[b];
+ szamok[1] = 10;
+
+----------------------------------
+
+Egy idő után nagyon komplex, bonyolult és redundáns lehet a kódunk.
+
+Metódus
+    - Void (eljárás, procedure)
+    - Visszatéréses (függvény, function)
+
+    Fontos, hogy egy dolgot csináljon!!! ==> MELLÉKHATÁSOK keletkezhetnek.
+
+-----------------------------------
+
+
+
+
+
+
