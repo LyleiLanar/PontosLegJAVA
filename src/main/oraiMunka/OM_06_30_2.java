@@ -1,4 +1,4 @@
-package main.oraiMunka.marhasag;
+package main.oraiMunka;
 
 public class OM_06_30_2 {
 
