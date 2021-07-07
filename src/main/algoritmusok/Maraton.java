@@ -284,7 +284,7 @@ public class Maraton {
                 amíg (I<N) és (A[I] NEM P tulajdonságú) ismétel
                     I := I + 1
                 avége
-                Hely := I
+
                 Van := (I<N)
 
                 ha (I<N) akkor
