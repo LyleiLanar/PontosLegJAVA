@@ -7,6 +7,10 @@ import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
 
+enum Uzemanyag{
+    BENZIN, DIESEL
+}
+
 public class AutoKereskedes {
 
     //Mennyi autó fér el a kereskedésben.
@@ -24,7 +28,9 @@ public class AutoKereskedes {
     public static final String[] colors = new String[maxCars];
     public static final int[] kms = new int[maxCars];
     public static final char[] fuels = new char[maxCars];
+   // public static final Uzemanyag[] fuels = new Uzemanyag[maxCars];
     public static final char[] shifters = new char[maxCars];
+
 
     public static void main(String[] args) throws IOException {
         //Jó lenne ha tudnánk autót vásárolni, szerezni "BUY"
