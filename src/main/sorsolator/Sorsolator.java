@@ -11,7 +11,8 @@ public class Sorsolator {
 
     static public final String TEACHER = "Patrik";
 
-    static public final String[] PUPILS = {"Juli", "Magdi", "Zsófi", "Vili", "Penya"};
+    static public final String[] PUPILS = {"Juli", "Magdi", "Zsófi", "Vili", "Penya", "Kinga" +
+            ""};
 
     /**
      * Pool:
