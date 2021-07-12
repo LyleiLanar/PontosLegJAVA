@@ -1,4 +1,4 @@
-package main.autok;
+package main.autok.proc;
 
 import javax.sound.midi.Soundbank;
 import java.io.File;
@@ -15,9 +15,6 @@ public class AutoKereskedes {
 
     //Mennyi autó fér el a kereskedésben.
     public static final int maxCars = 50;
-    public static String a = "asdf";
-    public static String b = "asdf";
-
     public static Scanner sc = new Scanner(System.in);
 
     //Az adott index értékű autónak milyen tulajdonságai vannak.

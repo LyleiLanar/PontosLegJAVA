@@ -1,4 +1,4 @@
-package main.autok;
+package main.autok.proc;
 
 import java.util.Scanner;
 

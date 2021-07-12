@@ -1,13 +1,12 @@
 package main.oraiMunka.kocka;
 
 import main.enums.KockaTipus;
-import main.enums.Szin;
+import main.enums.Color;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class KockaSzutyo {
@@ -19,7 +18,7 @@ public class KockaSzutyo {
 
     public static final String folderPath = "src\\main\\oraiMunka\\kocka";
     public static final int maxKocka = 6;
-    public static Szin[] szinek = new Szin[maxKocka];
+    public static Color[] szinek = new Color[maxKocka];
     public static KockaTipus[] kockak = new KockaTipus[maxKocka];
 
     public static void main(String[] args) throws IOException {
@@ -32,12 +31,12 @@ public class KockaSzutyo {
 
     }
 
-    public static boolean adKocka(Szin szin, KockaTipus tipus) {
+    public static boolean adKocka(Color color, KockaTipus tipus) {
 
         int hely = kapElsoUresHely();
 
         if (hely != -1) {
-            szinek[hely] = szin;
+            szinek[hely] = color;
             kockak[hely] = tipus;
             return true;
         }
@@ -127,21 +126,21 @@ public class KockaSzutyo {
         }
     }
 
-    public static Szin getSzinEnum(String szin) {
+    public static Color getSzinEnum(String szin) {
 
         switch (szin.toUpperCase()) {
             case "PIROS":
-                return Szin.PIROS;
+                return Color.PIROS;
             case "SÁRGA":
-                return Szin.SÁRGA;
+                return Color.SÁRGA;
             case "KÉK":
-                return Szin.KÉK;
+                return Color.KÉK;
             case "ZÖLD":
-                return Szin.ZÖLD;
+                return Color.ZÖLD;
             case "FEHÉR":
-                return Szin.FEHÉR;
+                return Color.FEHÉR;
             case "FEKETE":
-                return Szin.FEKETE;
+                return Color.FEKETE;
             default:
                 return null;
         }
