@@ -11,7 +11,7 @@ public class Program {
 
         CarShop cs = new CarShop();
 
-        Car[] cars = cs.getCars();
-        cars[0] = null;
+        //Car[] cars = cs.getCars();
+        //cars[0] = null;
     }
 }
