@@ -1,5 +1,6 @@
 package main.oraiMunka.oop.mytomb;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class MyTomb {
@@ -168,7 +169,6 @@ public class MyTomb {
         for (int i = 0; i < kieg.getHossz(); i++) {
             hozzafuz(kieg.getElem(i));
         }
-
     }
 
     public void hozzafuz(int szam) {
@@ -178,6 +178,10 @@ public class MyTomb {
         for (int i = 0; i < tomb.length; i++) {
             ujTomb[i] = tomb[i];
         }
+
+        ArrayList<Integer> tomb2 = new ArrayList<Integer>();
+
+
         ujTomb[ujTomb.length - 1] = szam;
 
         tomb = ujTomb;
