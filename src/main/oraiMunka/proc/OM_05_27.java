@@ -35,17 +35,16 @@ public class OM_05_27 {
         } else {
             System.out.println("A " + vizsgaltSzam + " NEM osztható 3-mal!");
         }
-
     }
 
     //BMI = kg/m^2
     public static double bodyMassIndex(int kg, int cm) {
-
         return kg / Math.pow((cm / 100), 2);
     }
 
     public static String bmiEredmeny(double bmi) {
 
+        System.out.println(bmi);
         if (bmi < 20) {
             return "girhes szegény";
         } else if (bmi < 25) {
