@@ -1,0 +1,34 @@
+ /*
+        Tömb: homogén, statikus
+        int[] tomb = new int[4];
+
+        ...|tomb[0]||tomb[1]||tomb[2]||tomb[3]|.....|tomb|.
+
+        List: homogén, dinamikus
+        List<int> lista = new List<>();
+        |adat2, mutato3|...|lista|...|adat0,mutato1|...|adat1,mutato2|...
+
+        Verem: homogén, statikus
+        LIFO: Last In First Out -> verem, stack
+
+        int[] verem;
+        max elemszam: mennyi elemet rakhatunk a verembe
+        teteje: hogy éppen melyik indexen van a legutolsónak behelyezett elem.
+        veram alja: a legalsó index. 0.
+
+        .push(érték)
+        .pop()
+
+        teteje = hanyadik elem a verem teteje
+                                                          VEREM hossz = 7         VEREM.push('D')              VEREM.pop()
+        |   |   |   |   |   |   |   | ....... | G |     6 |   |                    6 |   |                      6 |   |
+        |   |   |   |   |   |   |   | ....... | F |     5 |   |                    5 |   |                      5 |   |
+        |   |   |   |   |   |   |   | ....... | E |     4 |   |                    4 |   |                      4 |   |
+        |   |   |   |   |   |   |   | ....... | D |     3 |   |                    3 | D | <- mutato            3 |   |
+        |   |   |   | C |   |   |   | ....... | C |     2 | C | <- mutato          2 | C |                      2 | *C|
+        |   |   | B | B | B |   |   | ....... | B |     1 | B |                    1 | B |                      1 | B | <- mutato
+        |   | A | A | A | A | A |   | ....... | A |     0 | A | <- verem alja      0 | A | <- verem alja        0 | A | <- verem alja
+
+
+        FIFO: Firs In First Out -> sor, queue
+     */

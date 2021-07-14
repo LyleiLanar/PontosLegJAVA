@@ -20,6 +20,10 @@ public class Macska {
     private double tomeg;
     private boolean ehesE;
 
+    public String getNev() {
+        return nev;
+    }
+
     public Macska(String nev, double tomeg, boolean ehesE) {
         this.nev = nev;
         this.tomeg = tomeg;
