@@ -1,3 +1,20 @@
+
+
+public class Valami {
+    public static void main(String[] args) {
+
+        int a = 12;
+        int b = 23;
+
+        if (a = b) {
+            System.out.println("A két szám egyenlő.");
+        }
+        else
+            System.out.println("A két szám különbözik.");
+    }
+}
+
+
 Memória Bit (Bájt = 8bit)
 
 Változó: egy rekesz a memóriában, ami valamennyi bájt méretű, ebben valamilyen adatot tárolunk.

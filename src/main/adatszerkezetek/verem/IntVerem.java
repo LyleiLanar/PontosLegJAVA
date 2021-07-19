@@ -6,6 +6,7 @@ public class IntVerem {
     private int mutato;
     private int hossz;
 
+
     public IntVerem(int hossz) {
         this.hossz = hossz;
         this.mutato = -1;
@@ -56,5 +57,35 @@ public class IntVerem {
 
         System.out.println("]");
     }
+
+    public void rajzol() {
+
+        for (int i = hossz - 1; i >= 0; i--) {
+            String veremErtek = "-";
+            String mutatoString = "";
+
+            if (i <= mutato) {
+                veremErtek = verem[i] + "";
+            }
+
+            if (i == mutato) {
+                mutatoString = "<-M";
+            }
+
+            System.out.println(i + " | " + veremErtek + " | " + mutatoString);
+
+        }
+    }
+
+    /*
+             6 | - |
+             5 | - |
+             4 | - |
+             3 | D | <-
+             2 | C |
+             1 | B |
+             0 | A |
+     */
+
 
 }

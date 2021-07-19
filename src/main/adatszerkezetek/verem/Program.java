@@ -1,94 +1,49 @@
 package main.adatszerkezetek.verem;
 
+import main.oraiMunka.oop.Macskas.Macska;
+
+import java.util.Queue;
+import java.util.Stack;
+
 public class Program {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         IntVerem verem = new IntVerem(4);
 
-        try {
-            verem.pull();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-        }
-        verem.kiir();
+        verem.push(1);
+        verem.push(2);
+        verem.rajzol();
+        System.out.println();
 
-        verem.push(34);
-        verem.kiir();
+        verem.push(2);
+        verem.rajzol();
+        System.out.println();
 
-        try {
-            System.out.println("A veremből kivett érték: " + verem.pull());
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-        }
-        verem.kiir();
+        verem.push(2);
+        verem.rajzol();
+        System.out.println();
 
-        if (verem.push(10)) {
-            System.out.println("Sikeres push");
-        } else {
-            System.out.println("Sikertelen push");
-        }
-        verem.kiir();
+        verem.push(2);
+        verem.rajzol();
+        System.out.println();
 
-        if (verem.push(20)) {
-            System.out.println("Sikeres push");
-        } else {
-            System.out.println("Sikertelen push");
-        }
-        verem.kiir();
+        verem.pull();
+        verem.rajzol();
+        System.out.println();
 
-        if (verem.push(30)) {
-            System.out.println("Sikeres push");
-        } else {
-            System.out.println("Sikertelen push");
-        }
-        verem.kiir();
+        verem.pull();
+        verem.rajzol();
+        System.out.println();
 
-        if (verem.push(40)) {
-            System.out.println("Sikeres push");
-        } else {
-            System.out.println("Sikertelen push");
-        }
-        verem.kiir();
+        verem.pull();
+        verem.rajzol();
+        System.out.println();
 
-        if (verem.push(1)) {
-            System.out.println("Sikeres push");
-        } else {
-            System.out.println("Sikertelen push");
-        }
-        verem.kiir();
+        verem.pull();
+        verem.rajzol();
+        System.out.println();
+
+        Stack<Macska> stack = new Stack<>();
 
 
-        try {
-            System.out.println("A veremből kivett érték: " + verem.pull());
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-        }
-        verem.kiir();
-
-        try {
-            System.out.println("A veremből kivett érték: " + verem.pull());
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-        }
-        verem.kiir();
-
-        try {
-            System.out.println("A veremből kivett érték: " + verem.pull());
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-        }
-        verem.kiir();
-
-        try {
-            System.out.println("A veremből kivett érték: " + verem.pull());
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-        }
-        verem.kiir();
     }
 }
