@@ -1,4 +1,4 @@
-package main.oraiMunka.oop.Macskas;
+package main.oraiMunka.oop.macskas;
 
 public class Macska {
 /*

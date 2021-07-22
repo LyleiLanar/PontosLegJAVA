@@ -21,7 +21,7 @@ public class Program {
         System.out.println();
         kutya.fut();
 
-        kutya.szaporodik();
+       // kutya.szaporodik();
 
     }
 }

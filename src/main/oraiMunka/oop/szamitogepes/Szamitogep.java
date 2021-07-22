@@ -1,4 +1,4 @@
-package main.oraiMunka.oop.Szamitogepes;
+package main.oraiMunka.oop.szamitogepes;
 
 public class Szamitogep {
         /*

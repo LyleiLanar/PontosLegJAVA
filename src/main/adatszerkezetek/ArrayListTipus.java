@@ -1,9 +1,8 @@
 package main.adatszerkezetek;
 
-import main.oraiMunka.oop.Macskas.Macska;
+import main.oraiMunka.oop.macskas.Macska;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class ArrayListTipus {
     public static void main(String[] args) {

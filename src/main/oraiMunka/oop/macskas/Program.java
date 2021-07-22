@@ -1,6 +1,4 @@
-package main.oraiMunka.oop.Macskas;
-
-import java.util.Locale;
+package main.oraiMunka.oop.macskas;
 
 public class Program {
     public static void main(String[] args) {

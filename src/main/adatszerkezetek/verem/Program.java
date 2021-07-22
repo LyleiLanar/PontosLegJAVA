@@ -1,8 +1,7 @@
 package main.adatszerkezetek.verem;
 
-import main.oraiMunka.oop.Macskas.Macska;
+import main.oraiMunka.oop.macskas.Macska;
 
-import java.util.Queue;
 import java.util.Stack;
 
 public class Program {

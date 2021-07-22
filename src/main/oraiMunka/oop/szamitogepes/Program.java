@@ -1,9 +1,6 @@
-package main.oraiMunka.oop.Szamitogepes;
-
-import main.oraiMunka.oop.Macskas.Macska;
+package main.oraiMunka.oop.szamitogepes;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class Program {
 
