@@ -22,6 +22,10 @@ public class NyilasZaro {
         this.magassag = magassag;
     }
 
+    public Color getSzin() {
+        return szin;
+    }
+
     public NyilaszaroAnyag getAnyag() {
         return anyag;
     }

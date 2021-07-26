@@ -14,7 +14,8 @@ public class Ajto extends NyilasZaro {
     public Ajto(NyilaszaroAnyag anyag, Color szin, boolean uvegezett, boolean nyitva, double szelesseg, double magassag) {
         super(anyag, szin, uvegezett, nyitva, szelesseg, magassag);
         this.kulcsraZarva = false;
-        setKulcs();
+        //setKulcs();
+        this.kulcs="1234";
     }
 
 

@@ -15,18 +15,16 @@ public class Konyha {
     private Plafon plafon;
     private Padlo padlo;
 
-    private Szekreny konyszekreny;
     private Huto huto;
     private Tuzhely tuzhely;
 
-    public Konyha(Fal fal1, Fal fal2, Fal fal3, Fal fal4, Plafon plafon, Padlo padlo, Szekreny konyszekreny, Huto huto, Tuzhely tuzhely) {
+    public Konyha(Fal fal1, Fal fal2, Fal fal3, Fal fal4, Plafon plafon, Padlo padlo, Huto huto, Tuzhely tuzhely) {
         this.fal1 = fal1;
         this.fal2 = fal2;
         this.fal3 = fal3;
         this.fal4 = fal4;
         this.plafon = plafon;
         this.padlo = padlo;
-        this.konyszekreny = konyszekreny;
         this.huto = huto;
         this.tuzhely = tuzhely;
     }
@@ -55,15 +53,19 @@ public class Konyha {
         return padlo;
     }
 
-    public Szekreny getKonyszekreny() {
-        return konyszekreny;
-    }
-
     public Huto getHuto() {
         return huto;
     }
 
     public Tuzhely getTuzhely() {
         return tuzhely;
+    }
+
+    public void kinyitAblak1() {
+        if (fal1.getAblak() != null) {
+            fal1.getAblak().kinyit();
+        }else {
+            System.out.println("Nincs mit kinyitni!");
+        }
     }
 }

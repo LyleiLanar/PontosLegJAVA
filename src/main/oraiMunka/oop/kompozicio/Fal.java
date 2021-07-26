@@ -27,6 +27,19 @@ public class Fal {
         this(epitoAnyag,szin,null,ablak);
     }
 
+    public EpitoAnyag getEpitoAnyag() {
+        return epitoAnyag;
+    }
 
+    public Color getSzin() {
+        return szin;
+    }
 
+    public Ajto getAjto() {
+        return ajto;
+    }
+
+    Ablak getAblak() {
+        return ablak;
+    }
 }
